@@ -32,5 +32,6 @@ $ for img in os.listdir(lcd_folder_path):
     $img_resize= cv2.resize(img,(img_size,img_size))
     $lcd.append(img_resize)
 ```
+En esta imagen se explica cada parte de  ese texto
 [![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/parte2.png)](https://nodesource.com/products/nsolid)
     
