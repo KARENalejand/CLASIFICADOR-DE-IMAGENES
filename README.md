@@ -152,9 +152,37 @@ $ trained=model.fit(Images, Labels, epochs=30)
 
 [![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/entrenamiento.png)](https://nodesource.com/products/nsolid)
 
+- Para comprobar que quedo adecuadamente cargamos una imagen y la visualizamos
+```sh
+ $#imagen de interner se debe cargar 
+$ img=cv2.imread('p.jpeg')
+$ img_cvt=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+$ cv2.imshow('imagen',img)
+```
 
 
+- Se hace un cambio de tamaño en la imagen para que quede de 150*150 con 3 canales
+```sh
+$ img2=img_cvt
+$ img2=cv2.resize(img2,(img_size,img_size))
+$ print(img2.shape)
+$ img2=(np.expand_dims(img2,0))
+$ print(img2.shape)
+```
+- Se realiza la predicción para saber cómo la clasifica si como una lcd o un perro
+```sh
+predictions_single=model.predict(img2)
+print(predictions_single)
+print(np.sum(predictions_single))
+print(np.argmax(predictions_single))
+print(class_names[np.argmax(predictions_single)])
+```
+[![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/predicion.png)](https://nodesource.com/products/nsolid)
 
+
+###Resultados 
+- Podemos notar que pudo clasificar la imagen como un perro.
+[![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/prueba.png)](https://nodesource.com/products/nsolid)
 
 
 
