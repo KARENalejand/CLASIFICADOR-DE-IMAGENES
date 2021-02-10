@@ -122,6 +122,38 @@ $ plt.show()
 ```
 [![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/etiquetas.png)](https://nodesource.com/products/nsolid)
 
+- importamos las librerias de Tensorflow
+```sh
+$ import tensorflow as tf
+$ from tensorflow import keras
+$ from tensorflow.keras import datasets, layers, models
+$ import tensorflow.keras.optimizers as Optimizer
+
+$ # Helper libraries
+$ import numpy as np
+$ import matplotlib.pyplot as plt
+$print(tf.__version__)
+```
+- Se realiza el entrenamiento con 30 iteraciones
+```sh
+$ model = keras.Sequential([
+   $ keras.layers.Flatten(input_shape=(150, 150,3)),
+    $ keras.layers.Dense(128, activation='relu'),
+    
+    $ keras.layers.Dense(2, activation='softmax'),
+    
+])
+$model.compile(optimizer='adam',
+              $loss='sparse_categorical_crossentropy',
+              $ metrics=['accuracy'])
+ $model.fit(Images, Labels, epochs=3)
+$ trained=model.fit(Images, Labels, epochs=30)
+
+
+[![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/entrenamiento.png)](https://nodesource.com/products/nsolid)
+
+
+
 
 
 
