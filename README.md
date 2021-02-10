@@ -103,19 +103,24 @@ $ labels=np.concatenate([etiquetas_lcd,etiquetas_perro])
 $ print(len(labels))
 $ print(labels)
 ```
+- Graficamos las primeras 100 imágenes
 
-
-
-
-
-
-
-
-
-
-
-
-
+```sh
+$ #arreglo
+$ Labels=np.array(labels)
+$ print(Labels.shape)
+$ plt.figure(figsize=(10,10))
+$ for i in range(100):#GRAFICA 100 FIGURAS
+    $ plt.subplot(10,10,i+1)
+    $ plt.xticks([])
+    $ plt.yticks([])
+    $ plt.grid(False)
+    $ plt.imshow(Images[i])
+    $ #, cmap=plt.cm.binary
+   $ plt.xlabel(class_names[Labels[i]])
+$ plt.show()
+```
+[![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/etiquetas.png)](https://nodesource.com/products/nsolid)
 
 
 
