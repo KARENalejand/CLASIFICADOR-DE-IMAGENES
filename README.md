@@ -4,3 +4,7 @@
 
 - Creamos una carpeta con el nombre lcd y otra con el nombre perro.
 [![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/f.png)](https://nodesource.com/products/nsolid)
+
+- Dentro de dichas carpetas estarán las imágenes que se utilizarán para el
+entrenamiento.
+[![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/CARPETAS.png)](https://nodesource.com/products/nsolid)
