@@ -19,9 +19,9 @@ $ import cv2
 $ import numpy as np
 $ import os
 $ import matplotlib.pyplot as plt
-```c
+```
+
 - Luego cargamos las fotos  de las carpetas especificas
-[![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/CARPETAS.png)](https://nodesource.com/products/nsolid)
 ```sh
 $ lcd_folder_path="C:/Users/kv460/Documents/lcd/lcd"
 $ lcd=[]
@@ -32,3 +32,4 @@ $ for img in os.listdir(lcd_folder_path):
     $img_resize= cv2.resize(img,(img_size,img_size))
     $lcd.append(img_resize)
     ```
+    
