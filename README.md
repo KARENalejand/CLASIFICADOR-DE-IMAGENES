@@ -57,5 +57,23 @@ $ for img in os.listdir(perro_folder_path):
 $ perro = np.array(perro)
 $ print(perro.shape)
 ```
+- Graficamos las imagenes
+```sh
+$ print(lcd[4].shape)
+$ plt.figure()
+$ plt.imshow(np.squeeze(lcd[2]))
+$ plt.colorbar()
+$ plt.grid(False)
+$ plt.show()
+######
+$ print(perro[2].shape)
+$ plt.figure()
+$ plt.imshow(np.squeeze(perro[2]))
+$ plt.colorbar()
+$ plt.grid(False)
+$ plt.show()
+```
 
-    
+[![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/parte%203.png)](https://nodesource.com/products/nsolid)
+
+
