@@ -10,7 +10,7 @@ entrenamiento.
 [![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/CARPETAS.png)](https://nodesource.com/products/nsolid)
 
 ### Código 
-- Teniendo  completo el primer pasamos a  realizamos el siguiente codigo
+- Teniendo  completo el primer paso pasamos a  realizamos el siguiente codigo
 
 - primero importamos las  librerias 
 
@@ -34,4 +34,14 @@ $ for img in os.listdir(lcd_folder_path):
 ```
 En esta imagen se explica cada parte de  ese texto
 [![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/parte2.png)](https://nodesource.com/products/nsolid)
+
+- vizualizamos tamaño de la imagen
+
+```sh
+$ lcd = np.array(lcd)
+$ print(lcd.shape)
+```
+
+
+
     
