@@ -76,4 +76,49 @@ $ plt.show()
 
 [![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/parte%203.png)](https://nodesource.com/products/nsolid)
 
+- Se juntarán las imágenes con una concatenación
+```sh
+$ images=np.concatenate([lcd,perro])
+$ #convertir a un arreglo 
+$ Images=np.array(images)
+$ print(len(images)) #imprimecuantas imagenes hay en total
+```
+- En este momento etiquetas todas nuestras imágenes teniendo en cuenta, cuantas imágenes hay en cada carpeta en este caso en lcd hay 41 y en la carpeta perro hay81
+
+```sh
+$ etiquetas_lcd=np.repeat(0,41)#lcd se reconoce con elnumero 0
+$ print(len(etiquetas_lcd))
+$ print(etiquetas_lcd)
+#################etiquetamos##############
+$ etiquetas_perro=np.repeat(1,81)#perro se reconoce con elnumero 1
+$ print(len(etiquetas_perro))
+$ print(etiquetas_perro)
+```
+- Ahora damos el nombre a nuestras clases teniendo en cuenta que lcd fue nuestra primera etiqueta y perro la segunda, por lo cual deben ser colocadas en ese orden.
+Posterior a esto concatenamos las etiquetas
+```sh
+$ class_names=['lcd','perro']
+$ #concatenamos clases
+$ labels=np.concatenate([etiquetas_lcd,etiquetas_perro])
+$ print(len(labels))
+$ print(labels)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
