@@ -41,7 +41,21 @@ En esta imagen se explica cada parte de  ese texto
 $ lcd = np.array(lcd)
 $ print(lcd.shape)
 ```
+- Se realiza exactamente lo mismo, pero ahora para la carpeta de perro
 
-
+```sh
+$ ####cargamos las fotos  de las carpetas especificas### 
+$ perro_folder_path="C:/Users/kv460/Documents/lcd/perro"
+$ perro=[]
+$ img_size=150
+$ for img in os.listdir(perro_folder_path):
+    $ img = cv2.imread(os.path.join(perro_folder_path,img))
+    $ #img_gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    $ img_resize= cv2.resize(img,(img_size,img_size))
+    $ perro.append(img_resize)
+    
+$ perro = np.array(perro)
+$ print(perro.shape)
+```
 
     
