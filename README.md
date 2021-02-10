@@ -148,7 +148,7 @@ $model.compile(optimizer='adam',
               $ metrics=['accuracy'])
  $model.fit(Images, Labels, epochs=3)
 $ trained=model.fit(Images, Labels, epochs=30)
-
+```
 
 [![N|Solid](https://github.com/KARENalejand/imagenes/blob/main/entrenamiento.png)](https://nodesource.com/products/nsolid)
 
